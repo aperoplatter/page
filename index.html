@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO -->
+  <title>APÉRO PLATTER | Cafés da Manhã, Charcutaria e Grazing Tables em Brasília</title>
+  <meta name="description" content="Cafés da manhã, boxes de charcutaria e grazing tables premium em Brasília. Encomendas e experiências personalizadas pela APÉRO PLATTER." />
+  <meta name="keywords" content="café da manhã Brasília, charcutaria, grazing table, box gourmet, experiência gastronômica, presentes premium, Brasília DF" />
+  <meta name="author" content="APÉRO PLATTER" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="APÉRO PLATTER | Cafés da Manhã, Charcutaria e Grazing Tables em Brasília" />
+  <meta property="og:description" content="Cafés da manhã, boxes de charcutaria e grazing tables premium em Brasília. Encomendas e experiências personalizadas pela APÉRO PLATTER." />
+  <meta property="og:image" content="./assets/images/logo-principal.png" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="APÉRO PLATTER" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="APÉRO PLATTER | Cafés da Manhã, Charcutaria e Grazing Tables" />
+  <meta name="twitter:description" content="Experiências gastronômicas premium em Brasília. Cafés da manhã, charcutaria e grazing tables." />
+  <meta name="twitter:image" content="./assets/images/logo-principal.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/images/selo-premium.png" />
+  <link rel="apple-touch-icon" href="./assets/images/selo-premium.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "APÉRO PLATTER",
+    "description": "Cafés da manhã, boxes de charcutaria e grazing tables premium em Brasília.",
+    "url": "https://apero-platter.github.io/",
+    "telephone": "+5561981783474",
+    "email": "gleniasousa86@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Brasília",
+      "addressRegion": "DF",
+      "addressCountry": "BR"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Brasília"
+    },
+    "priceRange": "$$",
+    "image": "./assets/images/logo-principal.png",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== CABEÇALHO ===== -->
+  <header class="site-header" id="inicio" role="banner">
+    <div class="header-inner container">
+      <a href="#inicio" class="header-logo" aria-label="APÉRO PLATTER — Ir para o início">
+        <img src="./assets/images/logo-principal.png" alt="Logotipo APÉRO PLATTER — Cafés da Manhã" class="logo-img" />
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Navegação principal">
+        <ul class="nav-list" role="list">
+          <li><a href="#inicio" class="nav-link" aria-label="Ir para Início">Início</a></li>
+          <li><a href="#cardapio" class="nav-link" aria-label="Ir para Cardápio">Cardápio</a></li>
+          <li><a href="#sobre" class="nav-link" aria-label="Ir para Sobre">Sobre</a></li>
+        </ul>
+      </nav>
+
+      <a
+        href="https://wa.me/5561981783474?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20AP%C3%89RO%20PLATTER%20e%20gostaria%20de%20fazer%20um%20pedido."
+        class="btn btn-primary header-cta"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Fazer pedido pelo WhatsApp"
+        id="btn-header-pedido"
+      >
+        Fazer pedido
+      </a>
+
+      <button
+        class="hamburger"
+        id="hamburger-btn"
+        aria-label="Abrir menu de navegação"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        type="button"
+      >
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu de navegação móvel" hidden>
+      <nav aria-label="Navegação móvel">
+        <ul class="mobile-nav-list" role="list">
+          <li><a href="#inicio" class="mobile-nav-link" aria-label="Ir para Início">Início</a></li>
+          <li><a href="#cardapio" class="mobile-nav-link" aria-label="Ir para Cardápio">Cardápio</a></li>
+          <li><a href="#sobre" class="mobile-nav-link" aria-label="Ir para Sobre">Sobre</a></li>
+          <li>
+            <a
+              href="https://wa.me/5561981783474?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20AP%C3%89RO%20PLATTER%20e%20gostaria%20de%20fazer%20um%20pedido."
+              class="btn btn-primary mobile-cta"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Fazer pedido pelo WhatsApp"
+              id="btn-mobile-pedido"
+            >
+              Fazer pedido
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero" aria-label="Seção principal APÉRO PLATTER">
+      <div class="hero-media">
+        <img
+          src="./assets/images/grazing-table-10-pessoas.jpg"
+          alt="Grazing Table APÉRO PLATTER — tábua retangular farta com charcutaria, queijos, frutas e acompanhamentos dispostos com sofisticação"
+          class="hero-bg"
+        />
+        <div class="hero-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-content container">
+        <div class="hero-logo-wrap reveal">
+          <img
+            src="./assets/images/selo-premium.png"
+            alt="APÉRO PLATTER — Cafés da Manhã"
+            class="hero-selo"
+          />
+        </div>
+
+        <p class="hero-tagline reveal reveal-delay-1">Encontros extraordinários, cuidados até o último detalhe.</p>
+
+        <h1 class="hero-title reveal reveal-delay-2">
+          Experiências gastronômicas<br />
+          feitas para ficar na memória.
+        </h1>
+
+        <p class="hero-text reveal reveal-delay-3">
+          Cafés da manhã, boxes de charcutaria e grazing tables preparados com curadoria, delicadeza e atenção a cada detalhe.
+        </p>
+
+        <div class="hero-actions reveal reveal-delay-4">
+          <a
+            href="#cardapio"
+            class="btn btn-secondary"
+            aria-label="Conhecer o cardápio da APÉRO PLATTER"
+            id="btn-hero-cardapio"
+          >
+            Conhecer o cardápio
+          </a>
+          <a
+            href="https://wa.me/5561981783474?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20AP%C3%89RO%20PLATTER%20e%20gostaria%20de%20fazer%20um%20pedido."
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Pedir pelo WhatsApp"
+            id="btn-hero-whatsapp"
+          >
+            Pedir pelo WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE A MARCA ===== -->
+    <section class="sobre-marca section-pad" id="sobre-marca" aria-label="Sobre a APÉRO PLATTER">
+      <div class="container">
+        <div class="sobre-grid">
+          <div class="sobre-content reveal">
+            <span class="label-tag">A Marca</span>
+            <h2 class="section-title">Mais do que servir,<br /><em>criar experiências.</em></h2>
+            <p class="body-text">
+              A APÉRO PLATTER transforma cafés da manhã, presentes e encontros em experiências gastronômicas memoráveis. Cada composição é preparada com produtos selecionados, apresentação cuidadosa e uma estética pensada para surpreender desde o primeiro olhar.
+            </p>
+
+            <div class="destaques-grid" role="list">
+              <div class="destaque-item reveal" role="listitem">
+                <div class="destaque-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M12 2L14.09 8.26L20.18 9L16 13.14L17.18 19.02L12 16L6.82 19.02L8 13.14L3.82 9L9.91 8.26L12 2Z" stroke="#B89A63" stroke-width="1.5" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="destaque-title">Produtos selecionados</h3>
+                  <p class="destaque-text">Ingredientes cuidadosamente escolhidos para garantir sabor, frescor e apresentação impecável.</p>
+                </div>
+              </div>
+
+              <div class="destaque-item reveal reveal-delay-1" role="listitem">
+                <div class="destaque-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke="#B89A63" stroke-width="1.5" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="destaque-title">Apresentação premium</h3>
+                  <p class="destaque-text">Cada composição é montada com estética editorial, pensada para impressionar desde o primeiro olhar.</p>
+                </div>
+              </div>
+
+              <div class="destaque-item reveal reveal-delay-2" role="listitem">
+                <div class="destaque-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#B89A63" stroke-width="1.5"/>
+                    <path d="M12 6V12L16 14" stroke="#B89A63" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="destaque-title">Produção artesanal e cuidadosa</h3>
+                  <p class="destaque-text">Elaborada com atenção a cada detalhe, da montagem ao acabamento, garantindo uma experiência completa.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sobre-image-wrap reveal reveal-delay-1">
+            <img
+              src="./assets/images/cafe-da-manha.png"
+              alt="Cesta Café da Manhã APÉRO PLATTER — cesta de madeira com mini bolo, waffle, pão de queijo, sucos, frutas e acompanhamentos elegantemente organizados"
+              class="sobre-image"
+              loading="lazy"
+            />
+            <div class="sobre-image-frame" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CARDÁPIO E PRODUTOS ===== -->
+    <section class="cardapio section-pad" id="cardapio" aria-label="Cardápio e produtos APÉRO PLATTER">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="label-tag">Cardápio</span>
+          <h2 class="section-title">Nossas composições</h2>
+          <p class="section-subtitle">Cada produto é preparado com cuidado, qualidade e uma apresentação que celebra o momento.</p>
+        </div>
+
+        <div class="produtos-grid">
+
+          <!-- PRODUTO 1: Cesta Café da Manhã -->
+          <article class="produto-card reveal" aria-label="Produto: Cesta Café da Manhã APÉRO">
+            <div class="card-image-wrap">
+              <img
+                src="./assets/images/cafe-da-manha.png"
+                alt="Cesta Café da Manhã APÉRO — cesta de madeira com mini bolo, waffle, pão de queijo, sucos, frutas e acompanhamentos elegantemente organizados"
+                class="card-image"
+                loading="lazy"
+              />
+              <div class="card-badge" aria-label="Serve 2 pessoas">2 pessoas</div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Cesta Café da Manhã APÉRO</h3>
+              <p class="card-description">
+                Uma composição completa e delicada para transformar a primeira refeição do dia em uma experiência especial.
+              </p>
+              <details class="card-details" aria-label="Ver composição do produto">
+                <summary class="card-details-toggle">Ver composição completa</summary>
+                <ul class="card-menu-list" role="list" aria-label="Itens incluídos na Cesta Café da Manhã">
+                  <li>Mini bolo caseiro</li>
+                  <li>Waffle</li>
+                  <li>Pão de queijo</li>
+                  <li>Mini sanduíche com presunto e queijo</li>
+                  <li>Pão doce com coco</li>
+                  <li>Copinho de frios com presunto e queijo</li>
+                  <li>Suco de laranja</li>
+                  <li>Bebida de chocolate</li>
+                  <li>Geleia, mel ou acompanhamento</li>
+                  <li>Mamão</li>
+                  <li>Uvas verdes</li>
+                  <li>Cartão e acabamento APÉRO PLATTER</li>
+                </ul>
+              </details>
+              <div class="card-price-wrap">
+                <span class="price-label">A partir de</span>
+                <span class="price-main" aria-label="Preço: R$ 219,90">R$ 219,90</span>
+                <span class="price-obs">Entrega calculada separadamente.</span>
+              </div>
+              <a
+                href="https://wa.me/5561981783474?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20a%20Cesta%20Caf%C3%A9%20da%20Manh%C3%A3%20AP%C3%89RO%20para%202%20pessoas."
+                class="btn btn-card"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Pedir a Cesta Café da Manhã APÉRO pelo WhatsApp"
+                id="btn-cafe-manha"
+              >
+                Pedir esta cesta
+              </a>
+            </div>
+          </article>
+
+          <!-- PRODUTO 2: Box de Charcutaria -->
+          <article class="produto-card reveal reveal-delay-1" aria-label="Produto: Box de Charcutaria APÉRO">
+            <div class="card-image-wrap">
+              <img
+                src="./assets/images/grazing-3-5-pessoas.png"
+                alt="Box de Charcutaria APÉRO — composição farta com presunto cru, salames, queijos, frutas frescas, crackers e acompanhamentos selecionados"
+                class="card-image"
+                loading="lazy"
+              />
+              <div class="card-badge" aria-label="Serve 2 a 3 pessoas">2 a 3 pessoas</div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Box de Charcutaria APÉRO</h3>
+              <p class="card-description">
+                Uma seleção equilibrada de frios, queijos, frutas e acompanhamentos para celebrar, presentear ou compartilhar.
+              </p>
+              <details class="card-details" aria-label="Ver composição do produto">
+                <summary class="card-details-toggle">Ver composição completa</summary>
+                <ul class="card-menu-list" role="list" aria-label="Itens incluídos na Box de Charcutaria">
+                  <li>Presunto cru tipo Parma</li>
+                  <li>Salame italiano</li>
+                  <li>Salame tipo chorizo ou pepperoni</li>
+                  <li>Queijo brie</li>
+                  <li>Queijo gouda</li>
+                  <li>Queijo gorgonzola</li>
+                  <li>Uvas verdes</li>
+                  <li>Morangos</li>
+                  <li>Damascos secos</li>
+                  <li>Castanhas</li>
+                  <li>Crackers e torradas</li>
+                  <li>Acompanhamentos selecionados</li>
+                  <li>Acabamento e identidade visual APÉRO PLATTER</li>
+                </ul>
+                <p class="cheese-note">
+                  A seleção de queijos pode variar entre brie, gouda, gorgonzola, estepe, parmesão capa preta e gruyère, conforme disponibilidade, preservando a quantidade, a qualidade e o padrão da composição.
+                </p>
+              </details>
+              <div class="card-price-wrap">
+                <div class="price-row">
+                  <span class="price-main" aria-label="Preço no Pix: R$ 369,90">R$ 369,90 <span class="price-method">no Pix</span></span>
+                  <span class="price-card" aria-label="Preço no cartão: R$ 379,90">R$ 379,90 <span class="price-method">no cartão</span></span>
+                </div>
+                <span class="price-obs">Entrega calculada separadamente.</span>
+              </div>
+              <a
+                href="https://wa.me/5561981783474?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20a%20Box%20de%20Charcutaria%20AP%C3%89RO%20para%202%20a%203%20pessoas."
+                class="btn btn-card"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Pedir a Box de Charcutaria APÉRO pelo WhatsApp"
+                id="btn-charcutaria"
+              >
+                Pedir esta box
+              </a>
+            </div>
+          </article>
+
+          <!-- PRODUTO 3: Box Grazing -->
+          <article class="produto-card reveal reveal-delay-2" aria-label="Produto: Box Grazing APÉRO">
+            <div class="card-image-wrap">
+              <img
+                src="./assets/images/charcutaria-2-3-pessoas.png"
+                alt="Box Grazing APÉRO — box farta com charcutaria selecionada, queijos especiais, frutas, crackers e acompanhamentos premium"
+                class="card-image"
+                loading="lazy"
+              />
+              <div class="card-badge badge-promo" aria-label="Preço promocional de lançamento">Lançamento</div>
+              <div class="card-badge-serve" aria-label="Serve 3 a 5 pessoas">3 a 5 pessoas</div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Box Grazing APÉRO</h3>
+              <p class="card-description">
+                Uma box farta e sofisticada, criada para encontros especiais, pequenas celebrações e momentos compartilhados.
+              </p>
+              <details class="card-details" aria-label="Ver composição do produto">
+                <summary class="card-details-toggle">Ver composição completa</summary>
+                <ul class="card-menu-list" role="list" aria-label="Itens incluídos na Box Grazing">
+                  <li>Presunto cru tipo Parma</li>
+                  <li>Salame italiano</li>
+                  <li>Salame tipo chorizo</li>
+                  <li>Queijo brie</li>
+                  <li>Queijo gouda</li>
+                  <li>Queijo gorgonzola</li>
+                  <li>Queijo estepe</li>
+                  <li>Parmesão capa preta</li>
+                  <li>Queijo gruyère</li>
+                  <li>Uvas verdes</li>
+                  <li>Morangos</li>
+                  <li>Damascos secos</li>
+                  <li>Chocolates</li>
+                  <li>Crackers e torradas</li>
+                  <li>Geleias</li>
+                  <li>Mel</li>
+                  <li>Antepastos</li>
+                  <li>Acabamento floral e identidade APÉRO PLATTER</li>
+                </ul>
+                <p class="cheese-note">
+                  A seleção de queijos pode variar entre brie, gouda, gorgonzola, estepe, parmesão capa preta e gruyère, conforme disponibilidade, preservando a quantidade, a qualidade e o padrão da composição.
+                </p>
+              </details>
+              <div class="card-price-wrap">
+                <div class="price-promo-wrap">
+                  <span class="price-promo-label">Preço de lançamento</span>
+                  <span class="price-promo" aria-label="Preço promocional de lançamento: R$ 469,99">R$ 469,99</span>
+                </div>
+                <div class="price-row price-row-secondary">
+                  <span class="price-regular" aria-label="Preço no Pix: R$ 499,90">R$ 499,90 <span class="price-method">Pix</span></span>
+                  <span class="price-separator">·</span>
+                  <span class="price-regular" aria-label="Preço no cartão: R$ 519,90">R$ 519,90 <span class="price-method">cartão</span></span>
+                </div>
+                <span class="price-obs">Entrega calculada separadamente.</span>
+              </div>
+              <a
+                href="https://wa.me/5561981783474?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20a%20Box%20Grazing%20AP%C3%89RO%20para%203%20a%205%20pessoas%20no%20valor%20promocional%20de%20lan%C3%A7amento."
+                class="btn btn-card"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Quero o valor de lançamento da Box Grazing APÉRO"
+                id="btn-grazing-box"
+              >
+                Quero o valor de lançamento
+              </a>
+            </div>
+          </article>
+
+          <!-- PRODUTO 4: Grazing Table -->
+          <article class="produto-card produto-card-destaque reveal" aria-label="Produto: Grazing Table APÉRO para 10 pessoas">
+            <div class="card-image-wrap">
+              <img
+                src="./assets/images/grazing-table-10-pessoas.jpg"
+                alt="Grazing Table APÉRO — tábua retangular de madeira de 100 x 35 cm com farta composição de charcutaria, queijos, frutas frescas, amêndoas e crackers para 10 pessoas"
+                class="card-image"
+                loading="lazy"
+              />
+              <div class="card-badge" aria-label="Serve 10 pessoas">10 pessoas</div>
+              <div class="card-selos" aria-hidden="true">
+                <span class="card-selo">Experiência para eventos</span>
+                <span class="card-selo card-selo-alt">Tábua inclusa</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Grazing Table APÉRO</h3>
+              <p class="card-description">
+                Uma experiência gastronômica completa, criada para receber, celebrar e compartilhar. Apresentada em uma ampla tábua retangular de madeira, a Grazing Table APÉRO reúne aproximadamente 3,8 a 4,2 kg de alimentos cuidadosamente selecionados e organizados em uma composição farta, sofisticada e visualmente marcante.
+              </p>
+
+              <div class="tabua-info" aria-label="Informações da tábua inclusa">
+                <h4 class="tabua-info-title">Sobre a tábua</h4>
+                <ul class="tabua-info-list" role="list">
+                  <li>Tábua retangular de madeira — aprox. 100 × 35 cm</li>
+                  <li>Espessura mínima de 2 cm</li>
+                  <li>A tábua está incluída no valor</li>
+                  <li>A tábua fica definitivamente com o cliente</li>
+                  <li>Inclui montagem e apresentação</li>
+                  <li>Entrega calculada conforme o endereço</li>
+                </ul>
+              </div>
+
+              <details class="card-details" aria-label="Ver composição completa da Grazing Table">
+                <summary class="card-details-toggle">Ver composição completa</summary>
+
+                <div class="card-menu-section">
+                  <h5 class="menu-section-title">Frios e charcutaria</h5>
+                  <ul class="card-menu-list" role="list">
+                    <li>400 g de salame italiano, incluindo flores ou rosas de salame</li>
+                    <li>350 g de presunto cru tipo Parma, apresentado em dobras e flores</li>
+                    <li>Aprox. 150 g de salame tipo chorizo</li>
+                  </ul>
+                </div>
+
+                <div class="card-menu-section">
+                  <h5 class="menu-section-title">Seleção de queijos</h5>
+                  <ul class="card-menu-list" role="list">
+                    <li>200 g de queijo brie</li>
+                    <li>200 g de queijo gouda</li>
+                    <li>180 g de queijo gorgonzola</li>
+                    <li>200 g de queijo estepe</li>
+                    <li>180 g de parmesão capa preta</li>
+                    <li>180 g de queijo gruyère</li>
+                  </ul>
+                </div>
+
+                <div class="card-menu-section">
+                  <h5 class="menu-section-title">Frutas frescas</h5>
+                  <ul class="card-menu-list" role="list">
+                    <li>600 g de uvas verdes</li>
+                    <li>600 g de uvas vermelhas ou roxas</li>
+                    <li>250 g de morangos</li>
+                    <li>100 a 125 g de amoras</li>
+                    <li>3 a 4 unidades de kiwi (composição e decoração)</li>
+                  </ul>
+                </div>
+
+                <div class="card-menu-section">
+                  <h5 class="menu-section-title">Acompanhamentos</h5>
+                  <ul class="card-menu-list" role="list">
+                    <li>180 a 200 g de amêndoas</li>
+                    <li>250 g de crackers tradicionais</li>
+                    <li>150 g de crackers integrais, artesanais ou com sementes</li>
+                    <li>Alecrim fresco para acabamento</li>
+                    <li>Gipsofila como elemento decorativo externo</li>
+                    <li>Cartão, tag, selo e acabamento visual APÉRO PLATTER</li>
+                  </ul>
+                </div>
+
+                <p class="cheese-note">
+                  A composição possui aproximadamente 3,8 a 4,2 kg de alimentos. As quantidades podem sofrer pequenas variações conforme o tamanho, a sazonalidade e a disponibilidade dos produtos, preservando sempre o peso total, a qualidade e a proposta visual.
+                </p>
+
+                <p class="rendimento-note">
+                  Serve até 10 pessoas quando oferecida como entrada, aperitivo ou experiência de compartilhamento. Caso seja utilizada como refeição principal, recomenda-se considerar aproximadamente 8 pessoas.
+                </p>
+
+                <p class="tabua-obs">
+                  A tábua retangular de madeira de aproximadamente 100 × 35 cm, com espessura mínima de 2 cm, está incluída no valor e fica definitivamente com o cliente.
+                </p>
+              </details>
+
+              <div class="card-price-wrap">
+                <div class="price-row">
+                  <span class="price-main" aria-label="Preço no Pix: R$ 1.299,90">R$ 1.299,90 <span class="price-method">no Pix</span></span>
+                  <span class="price-card" aria-label="Preço no cartão: R$ 1.349,90">R$ 1.349,90 <span class="price-method">no cartão</span></span>
+                </div>
+                <span class="price-obs">Tábua inclusa · Montagem inclusa · Entrega calculada conforme o endereço.</span>
+              </div>
+
+              <a
+                href="https://wa.me/5561981783474?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20a%20Grazing%20Table%20AP%C3%89RO%20para%2010%20pessoas%2C%20com%20t%C3%A1bua%20de%20100%20x%2035%20cm%20inclusa."
+                class="btn btn-card"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Solicitar Grazing Table APÉRO para evento pelo WhatsApp"
+                id="btn-grazing-table"
+              >
+                Solicitar Grazing Table para o evento
+              </a>
+              <p class="card-pos-btn-note">
+                Após o contato, a equipe confirmará a data, o endereço, a disponibilidade dos ingredientes e os detalhes da montagem.
+              </p>
+            </div>
+          </article>
+
+        </div><!-- /produtos-grid -->
+
+        <!-- Observações gerais dos produtos -->
+        <div class="obs-gerais reveal" aria-label="Observações gerais sobre os produtos">
+          <p class="obs-gerais-text">
+            As imagens são ilustrativas e representam o padrão de apresentação da APÉRO PLATTER. Alguns ingredientes podem variar conforme disponibilidade e sazonalidade, preservando sempre a proposta, a qualidade e o valor da composição.
+          </p>
+          <ul class="obs-gerais-list" role="list">
+            <li>Pedidos sujeitos à confirmação de disponibilidade.</li>
+            <li>Entrega calculada de acordo com o endereço.</li>
+            <li>Personalizações podem alterar o valor final.</li>
+            <li>Pagamentos no cartão podem ter valor diferente do Pix.</li>
+            <li>A seleção de queijos pode variar apenas entre brie, gouda, gorgonzola, estepe, parmesão capa preta e gruyère.</li>
+            <li>A Grazing Table para 10 pessoas acompanha tábua retangular de madeira de aproximadamente 100 × 35 cm com espessura mínima de 2 cm.</li>
+            <li>A Grazing Table possui aproximadamente 3,8 a 4,2 kg de alimentos.</li>
+            <li>O valor da Grazing Table é de R$ 1.299,90 no Pix ou R$ 1.349,90 no cartão.</li>
+            <li>A tábua está incluída no valor e fica definitivamente com o cliente.</li>
+            <li>A montagem e a apresentação estão incluídas.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== EDIÇÃO ESPECIAL DIA DOS PAIS ===== -->
+    <section class="dia-pais section-pad" id="dia-dos-pais" aria-label="Edição Especial Dia dos Pais APÉRO PLATTER">
+      <div class="container">
+        <div class="dia-pais-grid">
+
+          <div class="dia-pais-content reveal">
+            <div class="dia-pais-header">
+              <span class="label-tag label-tag-light">Edição Especial</span>
+              <span class="edicao-limitada-badge" aria-label="Edição limitada">Edição limitada</span>
+            </div>
+            <h2 class="section-title section-title-light">
+              Cesta Especial<br /><em>Dia dos Pais APÉRO</em>
+            </h2>
+            <p class="body-text body-text-light">
+              Uma edição limitada criada para homenagear quem inspira, ensina e transforma cada momento em uma lembrança especial.
+            </p>
+
+            <details class="card-details card-details-light" aria-label="Ver composição da cesta de Dia dos Pais">
+              <summary class="card-details-toggle card-details-toggle-light">Ver composição completa</summary>
+              <ul class="card-menu-list card-menu-list-light" role="list" aria-label="Itens incluídos na Cesta Especial Dia dos Pais">
+                <li>Mini bolo caseiro</li>
+                <li>Suco de laranja</li>
+                <li>Bebida de chocolate</li>
+                <li>Mini panquecas ou waffle</li>
+                <li>Croissant recheado com presunto e queijo</li>
+                <li>Pão de queijo</li>
+                <li>Brownies ou chocolates artesanais</li>
+                <li>Mel ou geleia</li>
+                <li>Seleção de presunto e queijo</li>
+                <li>Uvas verdes</li>
+                <li>Morangos</li>
+                <li>Frutas selecionadas</li>
+                <li>Biscoito ou detalhe temático em formato de gravata</li>
+                <li>Cartão especial de Dia dos Pais</li>
+                <li>Laço, tag e acabamento exclusivo APÉRO PLATTER</li>
+              </ul>
+            </details>
+
+            <div class="card-price-wrap price-wrap-light">
+              <span class="price-serve-note">Serve 2 pessoas</span>
+              <div class="price-row">
+                <span class="price-main price-main-light" aria-label="Preço no Pix: R$ 289,90">R$ 289,90 <span class="price-method price-method-light">no Pix</span></span>
+                <span class="price-card price-card-light" aria-label="Preço no cartão: R$ 299,90">R$ 299,90 <span class="price-method price-method-light">no cartão</span></span>
+              </div>
+              <span class="price-obs price-obs-light">Entrega calculada conforme a região.</span>
+            </div>
+
+            <a
+              href="https://wa.me/5561981783474?text=Ol%C3%A1%2C%20gostaria%20de%20reservar%20a%20Cesta%20Especial%20Dia%20dos%20Pais%20AP%C3%89RO%20para%202%20pessoas."
+              class="btn btn-primary-light"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Reservar edição de Dia dos Pais pelo WhatsApp"
+              id="btn-dia-pais"
+            >
+              Reservar edição de Dia dos Pais
+            </a>
+
+            <p class="disponibilidade-note">Quantidade limitada e sujeita à disponibilidade.</p>
+          </div>
+
+          <div class="dia-pais-image-wrap reveal reveal-delay-1">
+            <img
+              src="./assets/images/dia-dos-pais.png"
+              alt="Cesta Especial Dia dos Pais APÉRO — cesta de madeira com mini bolo, croissant, panquecas, suco, chocolate, brownies, biscoito temático em gravata e frutas"
+              class="dia-pais-image"
+              loading="lazy"
+            />
+            <div class="dia-pais-frame" aria-hidden="true"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE GLÊNIA SOUSA ===== -->
+    <section class="sobre-glenia section-pad" id="sobre" aria-label="Sobre Glênia Sousa, empreendedora da APÉRO PLATTER">
+      <div class="container">
+        <div class="glenia-grid">
+
+          <div class="glenia-image-wrap reveal">
+            <img
+              src="./assets/images/glenia-sousa.jpg"
+              alt="Glênia Sousa, empreendedora à frente da APÉRO PLATTER, em fotografia profissional em preto e branco"
+              class="glenia-image"
+              loading="lazy"
+            />
+            <div class="glenia-frame" aria-hidden="true"></div>
+            <blockquote class="glenia-quote">
+              <p>"Cada detalhe é uma forma de demonstrar cuidado."</p>
+              <cite>— Glênia Sousa</cite>
+            </blockquote>
+          </div>
+
+          <div class="glenia-content reveal reveal-delay-1">
+            <span class="label-tag">A empreendedora</span>
+            <h2 class="section-title">Glênia Sousa</h2>
+            <p class="glenia-subtitle">Empreendedora à frente da APÉRO PLATTER</p>
+            <p class="body-text">
+              Glênia Sousa é a empreendedora à frente da APÉRO PLATTER. Com olhar cuidadoso para apresentação, sabor e hospitalidade, transforma cafés da manhã, boxes de charcutaria e grazing tables em experiências pensadas para celebrar.
+            </p>
+            <p class="body-text">
+              Seu trabalho une organização, atenção aos detalhes e carinho em cada composição, criando produtos que surpreendem tanto pela beleza quanto pelo cuidado presente em cada escolha.
+            </p>
+
+            <div class="glenia-selos">
+              <img
+                src="./assets/images/selo-premium.png"
+                alt="Selo premium APÉRO PLATTER — Cafés da Manhã"
+                class="glenia-selo"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMO FAZER UM PEDIDO ===== -->
+    <section class="como-pedir section-pad" id="como-pedir" aria-label="Como fazer um pedido na APÉRO PLATTER">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="label-tag">Como funciona</span>
+          <h2 class="section-title">Como fazer um pedido</h2>
+        </div>
+
+        <ol class="steps-list" role="list" aria-label="Etapas para fazer um pedido">
+          <li class="step-item reveal" aria-label="Etapa 1: Escolha sua experiência">
+            <div class="step-number" aria-hidden="true">01</div>
+            <div class="step-content">
+              <h3 class="step-title">Escolha sua experiência</h3>
+              <p class="step-text">Selecione a cesta, box ou composição ideal para o seu momento.</p>
+            </div>
+          </li>
+          <li class="step-item reveal reveal-delay-1" aria-label="Etapa 2: Fale com a APÉRO">
+            <div class="step-number" aria-hidden="true">02</div>
+            <div class="step-content">
+              <h3 class="step-title">Fale com a APÉRO</h3>
+              <p class="step-text">Envie sua solicitação diretamente pelo WhatsApp.</p>
+            </div>
+          </li>
+          <li class="step-item reveal reveal-delay-2" aria-label="Etapa 3: Confirme os detalhes">
+            <div class="step-number" aria-hidden="true">03</div>
+            <div class="step-content">
+              <h3 class="step-title">Confirme os detalhes</h3>
+              <p class="step-text">Defina data, endereço, forma de pagamento e possíveis personalizações.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="como-pedir-cta reveal">
+          <a
+            href="https://wa.me/5561981783474?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20AP%C3%89RO%20PLATTER%20e%20gostaria%20de%20fazer%20um%20pedido."
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Fazer pedido agora pelo WhatsApp"
+            id="btn-fazer-pedido"
+          >
+            Fazer pedido agora
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="contato section-pad" id="contato" aria-label="Contato APÉRO PLATTER">
+      <div class="container">
+        <div class="contato-grid">
+
+          <div class="contato-content reveal">
+            <span class="label-tag">Contato</span>
+            <h2 class="section-title">Vamos preparar<br /><em>algo especial?</em></h2>
+            <p class="body-text">
+              Entre em contato para fazer seu pedido, consultar disponibilidade ou solicitar uma composição personalizada.
+            </p>
+
+            <address class="contato-info" aria-label="Informações de contato">
+              <div class="contato-item">
+                <span class="contato-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.87 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.99 6L15 14.09a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="#B89A63" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contato-label">WhatsApp</span>
+                  <a href="https://wa.me/5561981783474" class="contato-link" aria-label="Contato pelo WhatsApp (61) 98178-3474" target="_blank" rel="noopener noreferrer">(61) 98178-3474</a>
+                </div>
+              </div>
+
+              <div class="contato-item">
+                <span class="contato-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#B89A63" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <polyline points="22,6 12,13 2,6" stroke="#B89A63" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contato-label">E-mail</span>
+                  <a href="mailto:gleniasousa86@gmail.com" class="contato-link" aria-label="Enviar e-mail para gleniasousa86@gmail.com">gleniasousa86@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contato-item">
+                <span class="contato-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="#B89A63" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="10" r="3" stroke="#B89A63" stroke-width="1.5"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contato-label">Localização</span>
+                  <span class="contato-text">Brasília / DF</span>
+                </div>
+              </div>
+            </address>
+
+            <a
+              href="https://wa.me/5561981783474?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20AP%C3%89RO%20PLATTER%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Falar com a APÉRO PLATTER pelo WhatsApp"
+              id="btn-contato-whatsapp"
+            >
+              Falar pelo WhatsApp
+            </a>
+          </div>
+
+          <div class="contato-image-wrap reveal reveal-delay-1" aria-hidden="true">
+            <img
+              src="./assets/images/grazing-3-5-pessoas.png"
+              alt="Box Grazing APÉRO PLATTER — composição premium de charcutaria e queijos"
+              class="contato-image"
+              loading="lazy"
+            />
+            <div class="contato-overlay" aria-hidden="true"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="site-footer" role="contentinfo" aria-label="Rodapé APÉRO PLATTER">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#inicio" aria-label="APÉRO PLATTER — Ir para o início">
+            <img
+              src="./assets/images/logo-principal.png"
+              alt="Logotipo APÉRO PLATTER"
+              class="footer-logo"
+              loading="lazy"
+            />
+          </a>
+          <p class="footer-tagline">APÉRO PLATTER — Cafés da manhã, charcutaria e experiências gastronômicas.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <h3 class="footer-nav-title">Navegação</h3>
+          <ul role="list">
+            <li><a href="#inicio" class="footer-link" aria-label="Ir para Início">Início</a></li>
+            <li><a href="#sobre-marca" class="footer-link" aria-label="Ir para A Marca">A Marca</a></li>
+            <li><a href="#cardapio" class="footer-link" aria-label="Ir para Cardápio">Cardápio</a></li>
+            <li><a href="#dia-dos-pais" class="footer-link" aria-label="Ir para Dia dos Pais">Dia dos Pais</a></li>
+            <li><a href="#sobre" class="footer-link" aria-label="Ir para Sobre">Sobre</a></li>
+            <li><a href="#contato" class="footer-link" aria-label="Ir para Contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contato">
+          <h3 class="footer-nav-title">Contato</h3>
+          <address>
+            <p>
+              <a href="https://wa.me/5561981783474" class="footer-link" aria-label="WhatsApp (61) 98178-3474" target="_blank" rel="noopener noreferrer">(61) 98178-3474</a>
+            </p>
+            <p>
+              <a href="mailto:gleniasousa86@gmail.com" class="footer-link" aria-label="E-mail gleniasousa86@gmail.com">gleniasousa86@gmail.com</a>
+            </p>
+            <p class="footer-text">Brasília / DF</p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© <span id="footer-year">2026</span> APÉRO PLATTER. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BOTÃO FLUTUANTE WHATSAPP ===== -->
+  <a
+    href="https://wa.me/5561981783474?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20AP%C3%89RO%20PLATTER%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar com a APÉRO PLATTER pelo WhatsApp"
+    id="btn-whatsapp-float"
+    role="button"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      width="26"
+      height="26"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </svg>
+    <span class="whatsapp-float-label">Pedido</span>
+  </a>
+
+  <!-- ===== LIGHTBOX (VISUALIZAÇÃO AMPLIADA) ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização ampliada da imagem" hidden>
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Fechar visualização">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+  </div>
+
+  <!-- Script -->
+  <script src="./script.js"></script>
+
+</body>
+</html>
