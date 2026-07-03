@@ -511,31 +511,20 @@ address {
 }
 
 .hero-logo-wrap {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.25rem;
+  justify-content: center;
 }
 
 .hero-selo {
   display: block;
-  width: clamp(150px, 26vw, 230px);
+  width: clamp(84px, 12vw, 116px);
   height: auto;
   margin-inline: auto;
   border-radius: 50%;
   box-shadow:
-    0 0 0 1px rgba(184, 154, 99, 0.55),
-    0 0 0 8px rgba(184, 154, 99, 0.10),
-    0 22px 55px rgba(0, 0, 0, 0.55);
-}
-
-.hero-logo {
-  height: clamp(48px, 9vw, 78px);
-  width: auto;
-  margin-inline: auto;
-  filter: drop-shadow(0 2px 16px rgba(0,0,0,0.4));
-  opacity: 0.92;
+    0 0 0 1px rgba(184, 154, 99, 0.4),
+    0 10px 28px rgba(0, 0, 0, 0.45);
 }
 
 .hero-tagline {
@@ -1555,7 +1544,9 @@ details[open] .card-details-toggle::after {
 
 .footer-selo {
   height: 88px;
-  width: auto;
+  width: 88px;
+  align-self: flex-start;
+  object-fit: contain;
   opacity: 0.95;
   border-radius: 50%;
   box-shadow: 0 0 0 1px rgba(184, 154, 99, 0.3);
