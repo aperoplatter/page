@@ -104,12 +104,13 @@ address {
 /* ---------- TIPOGRAFIA ---------- */
 .section-title {
   font-family: var(--font-title);
-  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-size: clamp(1.7rem, 6vw, 3.2rem);
   font-weight: 400;
   line-height: 1.2;
   color: var(--preto);
   letter-spacing: -0.01em;
   margin-bottom: 1.25rem;
+  overflow-wrap: break-word;
 }
 
 .section-title em {
@@ -233,6 +234,9 @@ address {
   padding: 0.8rem 1.6rem;
   width: 100%;
   margin-top: auto;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.4;
 }
 
 .btn-card:hover {
@@ -258,6 +262,10 @@ address {
   cursor: pointer;
   transition: background-color var(--transition), color var(--transition), transform var(--transition);
   margin-top: 1.5rem;
+  white-space: normal;
+  text-align: center;
+  max-width: 100%;
+  line-height: 1.4;
 }
 
 .btn-primary-light:hover {
