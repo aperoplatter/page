@@ -151,6 +151,11 @@
       <div class="hero-content container">
         <div class="hero-logo-wrap reveal">
           <img
+            src="./assets/images/selo-premium.png"
+            alt="Selo APÉRO PLATTER — Cafés da Manhã"
+            class="hero-selo"
+          />
+          <img
             src="./assets/images/logo-principal.png"
             alt="APÉRO PLATTER"
             class="hero-logo"
@@ -248,8 +253,8 @@
 
           <div class="sobre-image-wrap reveal reveal-delay-1">
             <img
-              src="./assets/images/charcutaria-2-3-pessoas.png"
-              alt="Box de charcutaria APÉRO PLATTER com queijos, frios, frutas e acompanhamentos cuidadosamente dispostos"
+              src="./assets/images/cafe-da-manha.png"
+              alt="Cesta Café da Manhã APÉRO PLATTER — cesta de madeira com mini bolo, waffle, pão de queijo, sucos, frutas e acompanhamentos elegantemente organizados"
               class="sobre-image"
               loading="lazy"
             />
@@ -759,10 +764,10 @@
               Seu trabalho une organização, atenção aos detalhes e carinho em cada composição, criando produtos que surpreendem tanto pela beleza quanto pelo cuidado presente em cada escolha.
             </p>
 
-            <div class="glenia-selos" aria-hidden="true">
+            <div class="glenia-selos">
               <img
                 src="./assets/images/selo-premium.png"
-                alt="Selo premium APÉRO PLATTER"
+                alt="Selo premium APÉRO PLATTER — Cafés da Manhã"
                 class="glenia-selo"
                 loading="lazy"
               />
@@ -980,6 +985,14 @@
     </svg>
     <span class="whatsapp-float-label">Pedido</span>
   </a>
+
+  <!-- ===== LIGHTBOX (VISUALIZAÇÃO AMPLIADA) ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização ampliada da imagem" hidden>
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Fechar visualização">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+  </div>
 
   <!-- Script -->
   <script src="./script.js"></script>

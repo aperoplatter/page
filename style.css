@@ -512,13 +512,30 @@ address {
 
 .hero-logo-wrap {
   margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.hero-selo {
+  display: block;
+  width: clamp(150px, 26vw, 230px);
+  height: auto;
+  margin-inline: auto;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 1px rgba(184, 154, 99, 0.55),
+    0 0 0 8px rgba(184, 154, 99, 0.10),
+    0 22px 55px rgba(0, 0, 0, 0.55);
 }
 
 .hero-logo {
-  height: clamp(70px, 14vw, 120px);
+  height: clamp(48px, 9vw, 78px);
   width: auto;
   margin-inline: auto;
   filter: drop-shadow(0 2px 16px rgba(0,0,0,0.4));
+  opacity: 0.92;
 }
 
 .hero-tagline {
@@ -641,9 +658,12 @@ address {
 
 .sobre-image {
   width: 100%;
-  max-height: 560px;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
+  display: block;
+  border-radius: 2px;
+  box-shadow: 0 20px 45px rgba(62, 67, 52, 0.18);
 }
 
 .sobre-image-frame {
@@ -1351,9 +1371,13 @@ details[open] .card-details-toggle::after {
 }
 
 .glenia-selo {
-  height: 90px;
+  height: 130px;
   width: auto;
-  opacity: 0.65;
+  opacity: 1;
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 1px rgba(184, 154, 99, 0.4),
+    0 12px 30px rgba(62, 67, 52, 0.18);
 }
 
 /* ============================================================
@@ -1530,9 +1554,11 @@ details[open] .card-details-toggle::after {
 }
 
 .footer-selo {
-  height: 64px;
+  height: 88px;
   width: auto;
-  opacity: 0.55;
+  opacity: 0.95;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(184, 154, 99, 0.3);
 }
 
 .footer-tagline {
@@ -1651,6 +1677,77 @@ details[open] .card-details-toggle::after {
 
 .reveal-delay-4 {
   transition-delay: 0.48s;
+}
+
+/* ============================================================
+   LIGHTBOX — VISUALIZAÇÃO AMPLIADA DE IMAGENS
+   ============================================================ */
+.zoomable {
+  cursor: zoom-in;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 4vw, 3rem);
+  background: rgba(17, 17, 17, 0.92);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: zoom-out;
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox.open {
+  opacity: 1;
+}
+
+.lightbox-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 2px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.6);
+  transform: scale(0.96);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.lightbox.open .lightbox-img {
+  transform: scale(1);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: clamp(0.75rem, 2vw, 1.5rem);
+  right: clamp(0.75rem, 2vw, 1.5rem);
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--offwhite, #F7F4EE);
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(184, 154, 99, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.lightbox-close:hover,
+.lightbox-close:focus-visible {
+  background: rgba(184, 154, 99, 0.85);
+  transform: rotate(90deg);
 }
 
 /* ============================================================

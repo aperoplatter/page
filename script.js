@@ -328,6 +328,96 @@
   }
 
   /* ==========================================================
+     LIGHTBOX — ABRIR IMAGENS EM TELA CHEIA AO CLICAR
+  ========================================================== */
+
+  function initLightbox() {
+    var lightbox = qs('#lightbox');
+    var lightboxImg = qs('#lightbox-img');
+    var closeBtn = qs('#lightbox-close');
+    if (!lightbox || !lightboxImg || !closeBtn) return;
+
+    // Imagens de conteúdo que podem ser ampliadas
+    var selectors = [
+      '.hero-selo',
+      '.sobre-image',
+      '.card-image',
+      '.dia-pais-image',
+      '.glenia-image',
+      '.glenia-selo',
+      '.footer-selo',
+      '.contato-image'
+    ].join(',');
+
+    var images = qsa(selectors);
+    if (!images.length) return;
+
+    var lastFocused = null;
+
+    function openLightbox(img) {
+      lastFocused = img;
+      // Usa a versão efetivamente carregada em alta resolução
+      lightboxImg.src = img.currentSrc || img.src;
+      lightboxImg.alt = img.alt || '';
+      lightbox.removeAttribute('hidden');
+      // Força reflow para permitir a transição de opacidade
+      void lightbox.offsetWidth;
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      closeBtn.focus();
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+
+      var onEnd = function () {
+        lightbox.setAttribute('hidden', '');
+        lightboxImg.src = '';
+        lightbox.removeEventListener('transitionend', onEnd);
+      };
+      lightbox.addEventListener('transitionend', onEnd);
+
+      if (lastFocused && typeof lastFocused.focus === 'function') {
+        lastFocused.focus();
+      }
+    }
+
+    images.forEach(function (img) {
+      img.classList.add('zoomable');
+      img.setAttribute('tabindex', '0');
+      img.setAttribute('role', 'button');
+      img.setAttribute('aria-label', 'Ampliar imagem' + (img.alt ? ': ' + img.alt : ''));
+
+      img.addEventListener('click', function () {
+        openLightbox(img);
+      });
+
+      img.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox(img);
+        }
+      });
+    });
+
+    // Fechar ao clicar no fundo (fora da imagem)
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    closeBtn.addEventListener('click', closeLightbox);
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && lightbox.classList.contains('open')) {
+        closeLightbox();
+      }
+    });
+  }
+
+  /* ==========================================================
      TABS / PRODUTOS — NAVEGAÇÃO POR TECLADO NA GRADE
   ========================================================== */
 
@@ -363,6 +453,7 @@
     initWhatsappLinks();
     initDetailsAccessibility();
     initProductCardsFocus();
+    initLightbox();
   });
 
 })();
